@@ -89,8 +89,9 @@ PORT=5050
 
 1. Click **"Create Web Service"**
 2. Wait for deployment to complete (5-10 minutes)
-3. **Copy the service URL** (e.g., `https://focusblock-backend.onrender.com`)
+3. **Copy the service URL** (e.g., `https://focus-block.onrender.com`)
    - This is your backend API URL
+   - **Note:** Your backend URL is: `https://focus-block.onrender.com`
 
 ---
 
@@ -122,9 +123,9 @@ Fill in the following settings:
 Add this environment variable:
 
 ```
-REACT_APP_API_URL=https://focusblock-backend.onrender.com/api
+REACT_APP_API_URL=https://focus-block.onrender.com/api
 ```
-*(Replace with your actual backend URL from Step 2.4)*
+*(Use your actual backend URL - example: https://focus-block.onrender.com/api)*
 
 ### 3.4 Deploy Frontend
 
@@ -145,9 +146,14 @@ REACT_APP_API_URL=https://focusblock-backend.onrender.com/api
 4. Add/Update this variable:
 
 ```
-FRONTEND_URL=https://focusblock-frontend.onrender.com
+FRONTEND_URL=https://your-frontend-url.onrender.com
 ```
 *(Replace with your actual frontend URL from Step 3.4)*
+
+**Important:** For your backend at `https://focus-block.onrender.com`, set:
+```
+FRONTEND_URL=https://your-frontend-url.onrender.com
+```
 
 ### 4.2 Redeploy Backend
 
@@ -200,15 +206,18 @@ To create an admin user for testing:
 ```
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/focusblock?retryWrites=true&w=majority
 JWT_SECRET=your-production-secret-key
-FRONTEND_URL=https://focusblock-frontend.onrender.com
+FRONTEND_URL=https://your-frontend-url.onrender.com
 NODE_ENV=production
 PORT=5050
 ```
 
 ### Frontend (Render Static Site):
 ```
-REACT_APP_API_URL=https://focusblock-backend.onrender.com/api
+REACT_APP_API_URL=https://focus-block.onrender.com/api
 ```
+
+**✅ Your Backend URL:** `https://focus-block.onrender.com`  
+**✅ Frontend API URL:** `https://focus-block.onrender.com/api`
 
 ---
 
@@ -286,9 +295,10 @@ REACT_APP_API_URL=https://focusblock-backend.onrender.com/api
 
 After deployment, you'll have:
 
-- **Frontend:** `https://focusblock-frontend.onrender.com`
-- **Backend API:** `https://focusblock-backend.onrender.com`
-- **API Health Check:** `https://focusblock-backend.onrender.com/health`
+- **Frontend:** `https://your-frontend-url.onrender.com`
+- **Backend API:** `https://focus-block.onrender.com` ✅
+- **API Health Check:** `https://focus-block.onrender.com/health` ✅
+- **API Base URL:** `https://focus-block.onrender.com/api` ✅
 
 ---
 
