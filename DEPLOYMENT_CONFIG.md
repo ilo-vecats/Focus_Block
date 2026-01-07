@@ -20,12 +20,15 @@ Your backend on Render should have:
 ```
 MONGO_URI=your-mongodb-atlas-connection-string
 JWT_SECRET=your-secret-key
-FRONTEND_URL=https://your-frontend-url.onrender.com
+FRONTEND_URL=https://focus-block-1.onrender.com
 NODE_ENV=production
 PORT=5050
 ```
 
-**Note:** Update `FRONTEND_URL` after you deploy your frontend.
+**✅ Your Frontend URL:** `https://focus-block-1.onrender.com`  
+**✅ Your Backend URL:** `https://focus-block.onrender.com`
+
+**Note:** The backend CORS now automatically allows Render domains, but setting FRONTEND_URL explicitly ensures proper configuration.
 
 ## Testing
 

@@ -146,14 +146,14 @@ REACT_APP_API_URL=https://focus-block.onrender.com/api
 4. Add/Update this variable:
 
 ```
-FRONTEND_URL=https://your-frontend-url.onrender.com
+FRONTEND_URL=https://focus-block-1.onrender.com
 ```
-*(Replace with your actual frontend URL from Step 3.4)*
+*(Use your actual frontend URL - example: https://focus-block-1.onrender.com)*
 
-**Important:** For your backend at `https://focus-block.onrender.com`, set:
-```
-FRONTEND_URL=https://your-frontend-url.onrender.com
-```
+**✅ Your Frontend URL:** `https://focus-block-1.onrender.com`  
+**✅ Your Backend URL:** `https://focus-block.onrender.com`
+
+**Note:** The backend CORS is now configured to automatically allow Render domains, but setting FRONTEND_URL explicitly is recommended.
 
 ### 4.2 Redeploy Backend
 
